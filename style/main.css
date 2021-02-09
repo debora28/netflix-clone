@@ -1,8 +1,6 @@
 :root {
   --preto: #141414;
   --vermelho: #e50914;
-  --cinzaLinks: #aaa;
-  --brancoHover: #ffff;
 }
 
 * {
@@ -27,11 +25,11 @@ header .container {
 }
 
 header nav a:hover {
-  color: var(--brancoHover);
+  color: white;
 }
 
 header nav a {
-  color: var(--cinzaLinks);
+  color: #aaa;
   text-decoration: none;
   margin-right: 10px;
 }
@@ -47,7 +45,7 @@ header nav a {
 .imagem-principal {
   font-size: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("/img/capa-house.jpg");
+    url("/img/capa-dali.jpg");
   height: 400px;
   background-size: cover;
   display: flex;
@@ -90,7 +88,7 @@ header nav a {
 }
 
 .container {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .imagem-principal .container {
@@ -98,11 +96,12 @@ header nav a {
 }
 
 .box-fotos {
-  height: 100%;
+  height: 300px;
   width: 100%;
-  display: block;
+  /* display: block; */
 }
 
 .carousel-fotos {
-  margin-top: 5px;
+  margin-top: 10px;
 }
+
