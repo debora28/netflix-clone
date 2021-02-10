@@ -34,7 +34,8 @@ header nav a {
   margin-right: 10px;
 }
 
-.logo {
+header .logo {
+  margin-left: 5px;
   color: var(--vermelho);
   font-family: Arial Black, Times, serif;
   font-size: 40px;
@@ -45,7 +46,7 @@ header nav a {
 .imagem-principal {
   font-size: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("/img/capa-dali.jpg");
+    url("/img/capa-dali.jpg"); 
   height: 400px;
   background-size: cover;
   display: flex;
@@ -55,19 +56,14 @@ header nav a {
 }
 
 .imagem-principal .descricao {
-  margin-bottom: 40px;
-}
-
-.titulo {
-  margin-top: 5%;
-  font-size: 40px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-.descricao {
   margin-top: 10px;
   margin-bottom: 40px;
+}
+
+.imagem-principal .titulo {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .botao {
@@ -77,14 +73,17 @@ header nav a {
   padding: 15px 30px;
   margin-right: 15px;
   font-size: 12px;
-
   cursor: pointer;
-  transition: 2s ease all;
+  transition: .1s ease all;
 }
 
 .botao:hover {
   background-color: white;
   color: black;
+}
+
+.botao i{
+  margin-right: 8px;
 }
 
 .container {
@@ -96,9 +95,12 @@ header nav a {
 }
 
 .box-fotos {
-  height: 300px;
-  width: 100%;
-  /* display: block; */
+  height: 350px;
+  width: auto;
+  object-fit: cover;
+  order: 1;
+  display: block;
+  cursor: pointer;
 }
 
 .carousel-fotos {
